@@ -29,32 +29,42 @@
   </head>
   <body>
     <main>
-     <div class="product-card">
-      <div class="product-img">
-        <picture>
-          <source media="(min-width: 700px)" srcset="./images/image-product-desktop.jpg" />
-          <img class="productImg" src="./images/image-product-mobile.jpg" alt="Gabrielle Essence Eau De Parfum on a white surface surrounded by green leafs." />
-        </picture>
-      </div>
+      <div class="product-card">
+        <!--product image goes here-->
+        <div class="productPreview">
+          <picture>
+            <source
+              media="(min-width: 700px)"
+              srcset="./images/image-product-desktop.jpg"
+            />
+            <img
+              class="productImg"
+              src="./images/image-product-mobile.jpg"
+              alt="Gabrielle Essence Eau De Parfum on a white surface surrounded by green leafs."
+            />
+          </picture>
+        </div>
 
         <div class="description-card">
-          <header class="description-title">Perfume</header>
-          <h1 class="product-name">Gabrielle Essence Eau De Parfum</h1>
+          <p class="description-title">Perfume</p>
+
+          <h1>Gabrielle Essence Eau De Parfum</h1>
+
           <p class="description-para">
             A floral, solar and voluptuous interpretation composed by Olivier
             Polge, Perfumer-Creator for the House of CHANEL.
           </p>
 
-          <section class="price">
+          <div class="price">
             <h2 class="main-price">$149.99</h2>
             <span class="old-price">$169.99</span>
-          </section>
+          </div>
 
-          <section class="addToCart">
+          <div class="button">
             <button>
-              <img src="images/icon-cart.svg" alt="cart Icon" />Add to Cart
+              <img src="images/icon-cart.svg" alt="" />Add to Cart
             </button>
-          </section>
+          </div>
         </div>
       </div>
     </main>
@@ -62,11 +72,9 @@
     <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by
+        >Frontend Mentor</a>Coded by
       <a href="https://web.facebook.com/blessing.emejulu.33/"
-        >Blessing Emejulu</a
-      >.
+        >Blessing Emejulu</a>
     </div>
   </body>
 </html>
