@@ -1,55 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <link rel="stylesheet" href="style.css">
-  
-  <title>Frontend Mentor | Product preview card component</title>
+    <link rel="stylesheet" href="style.css" />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Product preview card component</title>
 
-<main>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+     <div class="product-card">
+      <div class="product-img">
+        <picture>
+          <source media="(min-width: 700px)" srcset="./images/image-product-desktop.jpg" />
+          <img class="productImg" src="./images/image-product-mobile.jpg" alt="Gabrielle Essence Eau De Parfum on a white surface surrounded by green leafs." />
+        </picture>
+      </div>
 
-  <div class="product-card">
+        <div class="description-card">
+          <header class="description-title">Perfume</header>
+          <h1 class="product-name">Gabrielle Essence Eau De Parfum</h1>
+          <p class="description-para">
+            A floral, solar and voluptuous interpretation composed by Olivier
+            Polge, Perfumer-Creator for the House of CHANEL.
+          </p>
 
-  <!--product image goes here-->
-  
-  <div class="product-img"></div>
+          <section class="price">
+            <h2 class="main-price">$149.99</h2>
+            <span class="old-price">$169.99</span>
+          </section>
 
-  <div class="description-card">
-  <p class="description-title">P e r f u m e</p>
+          <section class="addToCart">
+            <button>
+              <img src="images/icon-cart.svg" alt="cart Icon" />Add to Cart
+            </button>
+          </section>
+        </div>
+      </div>
+    </main>
 
-  <h1>Gabrielle Essence Eau De Parfum</h1>
-
-  <p class="description-para"> A floral, solar and voluptuous interpretation composed by Olivier Polge, 
-  Perfumer-Creator for the House of CHANEL.</p>
-
-<div class="price">
-  <h2 class="main-price">$149.99</h2>
-  <span class="old-price">$169.99</span>
-</div>
-
-<div class="button">
-  <button>
-   <img src="images/icon-cart.svg" alt="">Add to Cart
-  </button>
-</div>
-  </div>
-  </div></main>
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://web.facebook.com/blessing.emejulu.33/">Blessing Emejulu</a>.
-  </div>
-</body>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://web.facebook.com/blessing.emejulu.33/"
+        >Blessing Emejulu</a
+      >.
+    </div>
+  </body>
 </html>
